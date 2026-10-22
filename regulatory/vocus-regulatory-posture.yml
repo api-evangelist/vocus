@@ -1,0 +1,68 @@
+generated: '2026-10-22'
+method: searched
+source: https://www.vocus.com.au/privacy-policy
+policy_last_updated: '29 April 2026'
+jurisdiction: Australia (Privacy Act 1988 (Cth), Australian Privacy Principles)
+pages_read:
+- url: https://www.vocus.com.au/privacy-policy
+  http_status: 200
+- url: https://www.vocus.com.au/help-and-support/legal-contracts
+  http_status: 200
+  note: Index of service schedules, plan summaries, Critical Information Summaries and policies; it carried no regulatory-posture language beyond links.
+signals:
+  data_subject_request:
+    url: https://www.vocus.com.au/privacy-policy
+    section: Can you access or correct personal information we hold about you?
+    channel: privacy@vocus.com.au (The Privacy Officer, Level 10, 452 Flinders Street, Melbourne VIC 3000)
+    stated_sla: usually 20 business days for access requests; complaints usually 30 days
+    rights_named: [access, correction, access to IPND details, complaint]
+    escalation: Office of the Australian Information Commissioner (OAIC)
+    evidence:
+    - source: https://www.vocus.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        You have a right to access personal information we hold about you. You are also entitled to ask us to
+        provide you with the details we have provided about you to the IPND. You can do this by contacting us
+        and we will provide you with the information within a reasonable time (usually 20 business days).
+    - source: https://www.vocus.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        The Privacy Officer will investigate your complaint and notify you of the outcome within a reasonable
+        period of time (usually 30 days). If you disagree with our decision, you may refer your complaint to the
+        Office of the Australian Information Commissioner
+    note: >-
+      Australian Privacy Act access and correction rights with a stated typical turnaround and OAIC escalation.
+      No deletion or portability right is named.
+  data_residency:
+    url: https://www.vocus.com.au/privacy-policy
+    section: Is personal information disclosed outside Australia?
+    countries_named: [Philippines, India, Singapore, Bangladesh, Vietnam, New Zealand, United Kingdom, Canada, United States of America]
+    evidence:
+    - source: https://www.vocus.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: Federal Government and Defence-related customer data is not disclosed or transferred outside Australia.
+    - source: https://www.vocus.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Database and webhosting services provided to us involve personal information being transferred to IT
+        service providers based in these countries.
+    note: >-
+      Onshore commitment limited to Federal Government and Defence customer data; other personal information
+      is disclosed offshore to the named countries.
+  subprocessors:
+    url: https://www.vocus.com.au/privacy-policy
+    section: Is personal information disclosed outside Australia?
+    evidence:
+    - source: https://www.vocus.com.au/privacy-policy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Our customer service and marketing call centre operations are managed by a third-party organisation,
+        which is based in Manila, Philippines.
+    note: >-
+      The policy names categories of overseas processors (call centre operator, IT database and webhosting
+      providers) and their countries, but no named subprocessor list was found.

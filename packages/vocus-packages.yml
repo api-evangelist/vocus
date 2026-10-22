@@ -1,0 +1,11 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://pypi.org/pypi/vocus-api/json
+- https://github.com/TelcoCentric/vocus_api
+note: 'no first-party package: every candidate a model listed was unowned (harvest-packages.py --audit)'
+packages: []
+rejected:
+- name: vocus-api
+  registry: pypi
+  reason: 'official: false as written'

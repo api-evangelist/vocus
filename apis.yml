@@ -1,23 +1,120 @@
 aid: vocus
+
 name: Vocus
-description: 'Vocus is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Vocus is Australia's specialist provider of fibre, network, and business solutions for businesses, government, and wholesale customers, operating an Australian and international fibre network. Its wholesale arm publishes Wholesale APIs for connectivity, real-time data access and automated network solutions, served through the Vocus Developer Portal (developer.vocus.com.au), where the full API catalogue is visible only after login and access is granted to customers with an active agreement via their Vocus Account Manager.
+
 url: https://raw.githubusercontent.com/api-evangelist/vocus/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Telecommunications
+- Fibre
+- Networking
+- Wholesale
+- Internet Service Provider
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.vocus.com.au/globalassets/global-media/brand/logos/logo---vocus-blue-rgb.svg
+
 common:
+- type: Conformance
+  url: conformance/vocus-conformance.yml
+- type: SecurityTxt
+  url: well-known/vocus-internal-security.txt
+- type: WellKnown
+  url: well-known/vocus-well-known.yml
+- type: Hosts
+  url: hosts/vocus-hosts.yml
+- type: Vendors
+  url: vendors/vocus-vendors.yml
+- type: DomainSecurity
+  url: security/vocus-domain-security.yml
 - type: Website
-  url: https://vocus.com.au/
+  url: https://www.vocus.com.au/
+- type: DeveloperPortal
+  url: https://developer.vocus.com.au/s/
+- type: Documentation
+  url: https://www.vocus.com.au/wholesale/wholesale-apis
+- type: Support
+  url: https://support.vocus.com.au/s/
+- type: HelpCenter
+  url: https://www.vocus.com.au/help-and-support
+- type: Contact
+  url: https://www.vocus.com.au/help-and-support/contact-us
+- type: Login
+  url: https://www.vocus.com.au/login
+- type: Newsroom
+  url: https://www.vocus.com.au/news
+- type: About
+  url: https://www.vocus.com.au/about-vocus
+- type: Leadership
+  url: https://www.vocus.com.au/about-vocus/social-impact/team
+- type: Careers
+  url: https://www.vocus.com.au/about-vocus/careers
+- type: Outages
+  url: https://www.vocus.com.au/help-and-support/outages
+- type: TermsOfService
+  url: https://www.vocus.com.au/help-and-support/legal-contracts
+- type: PrivacyPolicy
+  url: https://www.vocus.com.au/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/vocus-communications
+
+apis:
+- aid: vocus:wholesale-apis
+  name: Vocus Wholesale APIs
+  description: Vocus next-gen APIs for Vocus Wholesale customers, providing connectivity, real-time data access and automated network solutions (quote-to-delivery, provisioning, on-demand service changes), designed using the TMF / MEF Sonata industry frameworks. The API catalogue and reference on the Vocus API Portal (developer.vocus.com.au, Salesforce Experience Cloud) is visible only after login; access is granted via a Vocus Account Manager after verifying an active agreement. No public base URL or machine-readable contract is published.
+  humanURL: https://www.vocus.com.au/wholesale/wholesale-apis
+  tags:
+  - Wholesale
+  - Telecommunications
+  - MEF Sonata
+  properties:
+  - type: Documentation
+    url: https://www.vocus.com.au/wholesale/wholesale-apis
+  - type: DeveloperPortal
+    url: https://developer.vocus.com.au/s/
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website and link pointers verified by browser-UA GET on 2026-10-22; developer portal catalogue is login-gated.
+  evidence:
+  - url: https://www.vocus.com.au/
+    status: 200
+  - url: https://developer.vocus.com.au/s/
+    status: 200
+  - url: https://www.vocus.com.au/wholesale/wholesale-apis
+    status: 200
+  - url: https://support.vocus.com.au/s/
+    status: 200
+  - url: https://www.vocus.com.au/help-and-support/legal-contracts
+    status: 200
+  - url: https://www.vocus.com.au/privacy-policy
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 15
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

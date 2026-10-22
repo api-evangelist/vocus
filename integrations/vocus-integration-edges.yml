@@ -1,0 +1,21 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/vocus/integrations
+- https://n8n.io/integrations/vocus/
+- https://composio.dev/toolkits/vocus
+- https://monid.ai/tools/vocus
+checked:
+- https://www.vocus.com.au/wholesale/wholesale-apis
+- https://developer.vocus.com.au/s/
+- https://composio.dev/toolkits/vocus
+- https://monid.ai/tools/vocus
+- https://n8n.io/integrations/vocus/
+- https://zapier.com/apps/vocus/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: No marketplace listings, integrations directory or partner-app page for the Wholesale APIs were found, and
+  no contract is public. The wholesale page names one customer story (Pentanet, an ISP integrating with Vocus APIs);
+  that is a customer, not an integration partner, so it is not recorded as an edge.

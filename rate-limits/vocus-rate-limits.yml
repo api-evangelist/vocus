@@ -1,0 +1,9 @@
+name: Vocus rate limits
+generated: '2026-10-22'
+method: none
+source:
+- https://www.vocus.com.au/wholesale/wholesale-apis
+- https://developer.vocus.com.au/s/
+limit_count: 0
+limits: []
+note: No rate limits are published on public pages. The API catalogue and reference on developer.vocus.com.au are visible only after login, so any limits documented there could not be read.

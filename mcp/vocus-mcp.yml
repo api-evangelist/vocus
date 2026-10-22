@@ -1,0 +1,27 @@
+name: Vocus MCP Server
+type: MCPServer
+provider: vocus
+generated: '2026-10-22'
+method: none
+status: none
+description: >-
+  No official Vocus MCP server (hosted or local package) was found. Vocus publishes no
+  public OpenAPI or other machine-readable contract (its Wholesale API catalogue on
+  developer.vocus.com.au is login-gated), so no candidate tool list could be derived.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+evidence:
+- url: https://developer.vocus.com.au/mcp/v1
+  status: 401
+  note: >-
+    Pre-flight probe of a conventional path, not a documented endpoint. A control path on the
+    same host also returned 401 (the Salesforce Experience Cloud edge authenticates before it
+    routes), so this proves nothing about an MCP server and is NOT recorded as an endpoint.
+- url: https://developer.vocus.com.au/s/
+  status: 200
+  note: Developer portal home; "Log in to see our full API catalogue." No MCP documentation visible.
+- search: Vocus Wholesale API MCP server
+  result: no Vocus MCP server found in web search or MCP registries (2026-10-22).

@@ -1,0 +1,7 @@
+generated: '2026-10-22'
+method: searched
+source: https://www.vocus.com.au/wholesale/wholesale-apis
+standards:
+- id: mef-lso-sonata
+  conforms: claimed
+  evidence: 'Wholesale APIs page: "Designed using industry-standard frameworks (TMF Sonata), our APIs ensure seamless integration across platforms" -- a marketing claim; no contract is public to verify it (the API catalogue on developer.vocus.com.au is login-gated).'

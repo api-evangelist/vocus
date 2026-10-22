@@ -1,0 +1,120 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 6
+  other_domain: 1
+  platform: 1
+  roles:
+  - api
+  - other
+  - portal
+  - support
+  - website
+hosts:
+- host: api.com.au
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.au
+  role: api
+  relation: other-domain
+- host: developer.vocus.com.au
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - DeveloperPortal
+  serves:
+  - docs
+  registrable_domain: vocus.com.au
+  role: portal
+  relation: own
+- host: gowith.vocus.com.au
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: vocus.com.au
+  role: other
+  relation: own
+- host: internal.help.vocus.com.au
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: vocus.com.au
+  role: support
+  relation: own
+- host: support.vocus.com.au
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - Support
+  serves: []
+  registrable_domain: vocus.com.au
+  role: support
+  relation: own
+- host: vocus.com.au
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: vocus.com.au
+  role: other
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: www.vocus.com.au
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Documentation
+  - HelpCenter
+  - Contact
+  - Login
+  - Newsroom
+  - About
+  - Leadership
+  - Careers
+  - Outages
+  - TermsOfService
+  - PrivacyPolicy
+  serves:
+  - docs
+  - cdn
+  vendor: cloudflare
+  registrable_domain: vocus.com.au
+  role: website
+  relation: own
